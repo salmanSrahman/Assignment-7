@@ -26,6 +26,11 @@ router.get("/commentRead", commentController.commentRead);
 router.get("/commentUpdate", commentController.commentUpdate);
 router.get("/commentDelete", commentController.commentDelete);
 
+router.get("/blogCreate", blogController.blogCreate);
+router.get("/blogRead", blogController.blogRead);
+router.get("/blogUpdate", blogController.blogUpdate);
+router.get("/blogDelete", blogController.blogDelete);
+
 router.get("/productCreate", productController.productCreate);
 router.get("/productRead", productController.productRead);
 router.get("/productUpdate", productController.productUpdate);
