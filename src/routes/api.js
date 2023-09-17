@@ -7,6 +7,8 @@ const messageController = require("../controllers/messageController");
 
 const commentController = require("../controllers/commentController");
 
+const blogController = require("../controllers/blogController");
+
 router.get("/portfolioCreate", portfolioController.portfolioCreate);
 router.get("/portfolioRead", portfolioController.portfolioRead);
 router.get("/portfolioUpdate", portfolioController.portfolioUpdate);
@@ -21,5 +23,10 @@ router.get("/commentCreate", commentController.commentCreate);
 router.get("/commentRead", commentController.commentRead);
 router.get("/commentUpdate", commentController.commentUpdate);
 router.get("/commentDelete", commentController.commentDelete);
+
+router.get("/blogCreate", blogController.blogCreate);
+router.get("/blogRead", blogController.blogRead);
+router.get("/blogUpdate", blogController.blogUpdate);
+router.get("/blogDelete", blogController.blogDelete);
 
 module.exports = router;
